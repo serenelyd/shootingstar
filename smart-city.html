@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<title>Smart City</title>
+<head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
+
+<style>
+
+body {background-image:url('https://toppng.com/uploads/preview/leaves-green-dark-plant-11569844824xscd3pcf44.jpg');
+background-attachment: fixed;
+background-width:100%;
+background-size: cover;
+height:1080px!important;
+background-repeat: no-repeat;
+;}
+
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: 200;
+    overflow: auto;
+}
+.progress-bar
+{
+    border-radius: 16px;
+    width:300px;
+    background-color: #003a2c;
+
+}
+.progress
+{
+    border-radius: 16px!important;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+width: 7px;
+background:#ffffff;
+border-radius: 7px;
+}
+
+
+::-webkit-scrollbar-thumb {
+background: #0acd65;
+border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #008463;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #baffcf8f;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+a.nav {
+float: left;
+width: 250px;
+letter-spacing: 2px;
+color: #baffcf;
+font-style: bold;
+font-size: 15px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
+text-align: center;
+text-decoration: none;
+text-transform:Uppercase;
+height: 8px;
+line-height: 35px;
+margin-top: 12px;
+margin-bottom: 12px;
+font-family: 'Cinzel', cursive;}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #baffcf;
+}
+
+a.nav:hover {letter-spacing: 3px;
+color: #ffffff;
+font-size: 25px;
+padding-left: 20px;
+padding-right: 20px;
+text-align: center;
+alignment-adjust: central;}
+
+#page {height: 5000px;
+width: 700px,
+margin-left: 10px;
+margin-right: auto;
+margin-top: 40px;
+padding-bottom: 30px;
+overflow: hidden;}
+
+.box1 {height: 425px;
+border-radius: 30px;
+width: 700px;
+overflow: auto;
+background-color: #baffcf8f;
+padding: 7px 7px 7px 7px;
+position: relative;
+top: 0px;
+left: 0px;
+overflow: auto;}
+
+.box2 {height: 2030px;
+border-radius: 30px;
+width: 700px;
+overflow: auto;
+background-color: #4dff838f;
+padding: 7px 7px 7px 7px;
+position: relative;
+top: 50px;
+left:250px;
+overflow: auto;}
+
+
+.box3 {height: 1230px;
+border-radius: 30px;
+width: 700px;
+overflow: auto;
+background-color: #00cb7d8f;
+padding: 7px 7px 7px 7px;
+position: relative;
+top: 125px;
+left:500px;
+right: 0px;
+overflow: auto;}
+
+.box4 {height: 600px;
+border-radius: 30px;
+width: 700px;
+overflow: auto;
+background-color: #09a96b8f;
+padding: 7px 7px 7px 7px;
+position: relative;
+top: 200px;
+left:250px;
+right: 0px;
+overflow: auto;}
+
+
+.bgsections { background-color: #abffd4;
+border-radius: 10px; } 
+.box1:hover{
+  border: 50%;
+border-width:3px;
+border-style: groove;
+border-color:#ffffff!important;
+background-size: contain !important;
+box-sizing: border-box !important;
+display: inline-block !important;
+overflow: visible !important;
+-ms-transform: scale(1.1); /* IE 9 */
+-webkit-transform: scale(1.1); /* Safari 3-8 */
+transform: scale(1.1);
+transition: all .5s ease-in-out; }
+
+.box2:hover{
+  border: 50%;
+border-width:3px;
+border-style: groove;
+border-color:#ffffff!important;
+background-size: contain !important;
+box-sizing: border-box !important;
+display: inline-block !important;
+overflow: visible !important;
+-ms-transform: scale(1.1); /* IE 9 */
+-webkit-transform: scale(1.1); /* Safari 3-8 */
+transform: scale(1.1);
+transition: all .5s ease-in-out; }
+
+.box3:hover{
+  border: 50%;
+border-width:3px;
+border-style: groove;
+border-color:#ffffff!important;
+background-size: contain !important;
+box-sizing: border-box !important;
+display: inline-block !important;
+overflow: visible !important;
+-ms-transform: scale(1.1); /* IE 9 */
+-webkit-transform: scale(1.1); /* Safari 3-8 */
+transform: scale(1.1);
+transition: all .5s ease-in-out; }
+
+td, a, body, a {font-color:#000000 ;
+font-size: 15px;
+font-family: 'Comfortaa', sans-serif;
+text-shadow: .5px .5px 0px black;
+text-align: justify;}
+
+h1 {font-size: 25px;
+font-family: 'Cinzel', cursive;
+text-transform:uppercase;
+letter-spacing: 2px;
+line-height:30px;
+text-align: center;
+text-shadow: 2px 2px 0px black;
+color: #ffffff;}
+
+h1:hover{
+  color: white!important;
+text-shadow: 1px 1px 2px black, 0 0 20px #1E65A8, 0 0 10px #A3EEFA;
+letter-spacing: 5px;
+}
+
+h2
+{font-size: 35px;
+font-family: 'Cinzel', cursive;
+text-transform:uppercase;
+letter-spacing: 2px;
+line-height:30px;
+text-align: center;
+border-bottom: 3px solid #ffffff;
+text-shadow: 2px 2px 0px black;
+color: #ffffff;}
+
+a:link{
+  color: #baffcf;
+}
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 175px;background: #baffcf;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 10px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 20}}
+</style>
+<body>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<div class="topnav">
+  <a class="active" href="file:///D:/serene%20programsss/annual day.html">Home</a>
+  <a href="file:///D:/serene%20programsss/india-map-page.html" class="">
+      <i><img src="https://i.ibb.co/b5dhJj8/indiamapcolour.png" width="40"></img></i>
+      <p>INDIA MAP</p>
+      </a>
+      <a href="file:///D:/serene%20programsss/quiz.html"class="">
+      <i><img src="https://cdn-icons-png.flaticon.com/512/5678/5678011.png" width="40"></img></i>
+      <p>QUIZ</p>
+      </a>
+      <a href="file:///D:/serene programsss/smart-city.html" class="">
+      <i><img src="https://cdn-icons-png.flaticon.com/512/5994/5994274.png" width="40"></img></i>
+      <p>SMART CITY</p>
+      </a>
+      <a href="https://sites.google.com/view/knowyourfacts/home" class="">
+        <i><img src="https://cdn-icons-png.flaticon.com/512/6192/6192929.png" width="40"></img></i>
+        <p>CARBON</p>
+        </a>
+      <a href="file:///D:/serene%20programsss/gallery.html" class="">
+      <i><img src="https://cdn-icons-png.flaticon.com/512/3342/3342207.png" width="40"></img></i>
+      <p>GALLERY</p>
+      </a>
+      <a href="file:///D:/serene%20programsss/contact-us.html" class="">
+      <i><img src="https://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/addressbook-green-icon.png" width="40"></img></i>
+      <p>CONTACT US</p>
+      </a>
+      <a href="file:///D:/serene%20programsss/comments.html" class="">
+        <i><img src="https://cdn-icons-png.flaticon.com/512/811/811476.png" width="40"></img></i>
+        <p>COMMENTS</p>
+        </a>
+      </div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+<!-- Header/Home -->
+<header class="w3-container w3-padding-32 w3-center id="home">
+<h1 class="w3-jumbo"><span class="w3-hide-small">smart city</span></h1>
+
+<img src="" width="425">
+</header>
+
+<div id="myCarousel" class="carousel slide " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner w3-center">
+    <div class="item active">
+      <img src="https://i.ibb.co/g40d2NX/homepage-carousel-1.png" alt="Los Angeles" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Global warming, bad for farming</h3>
+        <p></p></div>
+    </div>
+
+    <div class="item">
+      <img src="https://i.ibb.co/yNZ4zfZ/homepage-carousel-2.png" alt="Chicago" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Trees can beat, the rising heat.</h3>
+        </div>
+    </div>
+
+    <div class="item">;
+      <img src="https://i.ibb.co/7GGs6ph/homepage-carousel.png" alt="New York" style="width:100%">
+      <div class="carousel-caption">
+        <h3>It takes cool people to help a warm planet</h3>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<!-- About Section -->
+<header class="w3-container w3-padding-32 w3-center id="home">
+<div class="position:absolute;
+top:1500px;
+left:1000px;
+width:200px;">
+<a href="#Page1" class="nav">Smart City</a><br></div>
+<div class="position:absolute;
+top:3000px;
+left:1000px;
+width:200px;">
+<a href="#Page2" class="nav">How our city is better</a><br></div>
+<div class="position:absolute;
+top:4500px;
+left:1000px;
+width:200px;">
+<a href="#Page3" class="nav">Infrastructure</a><br></div>
+<div class="position:absolute;
+top:1500px;
+left:1000px;
+width:200px;">
+</div> </header>
+
+
+
+<div id="page">
+<a name="Page1"></a>
+<div class="box1" id="Page1">
+
+    <header class="w3-container w3-padding-32 w3-center id="home">
+        <h1>Smart City</h1>
+        <p>The city of ur dreams. A dreamers haven. A smart city is a technologically modern urban area that uses different types of electronic methods and sensors to collect specific data. Information gained from that data is used to manage assets, resources and services efficiently; in return, that data is used to improve operations across the city. This includes data collected from citizens, devices, buildings and assets that is processed and analyzed to monitor and manage traffic and transportation systems, power plants, utilities, water supply networks, waste, Criminal investigations, information systems, schools, libraries, hospitals, and other community services. Smart cities are defined as smart both in the ways in which their governments harness technology as well as in how they monitor, analyze, plan, and govern the city.<br>
+       </p>
+        </header>
+</div>
+
+<a name="Page2"></a>
+<div class="box2" id="Page2">
+
+    <header class="w3-container w3-padding-32 w3-center id="home">
+        <h1>How our city is better
+        </h1></header>
+        <BR><table>
+            <tr>
+              <th>Innovation economy</th>
+              <th>Urban Infrastructure</th>
+              <th>Governance</th>
+            </tr>
+            <tr>
+              <td>Innovation in industries, clusters, districts of a city</td>
+              <td>Transport</td>
+              <td>Administration services to the citizen</td>
+            </tr>
+            <tr>
+              <td>Knowledge workforce: Education and employment</td>
+              <td>Energy / Utilities</td>
+              <td>Participatory and direct democracy</td>
+            </tr>
+            <tr>
+              <td>Creation of knowledge-intensive companies</td>
+              <td>Protection of the environment / Safety</td>
+              <td>Services to the citizen: Quality of life</td>
+            </tr>
+            
+          </table><bR>
+        <p>It has been suggested that a smart city (also community, business cluster, urban agglomeration or region) uses information technologies to:<br><br>
+            <br>
+            Make more efficient use of physical infrastructure (roads, built environment and other physical assets) through artificial intelligence and data analytics in order to support a strong and healthy economic, social, cultural development.
+            <br><br>Engage effectively with local governance by use of open innovation processes and e-participation, improving the collective intelligence of the city's institutions through e-governance, with emphasis placed on citizen participation and co-design.
+            <br><br>Learn, adapt and innovate and thereby respond more effectively and promptly to changing circumstances by improving the intelligence of the city.
+            <br><br>They evolve towards a strong integration of all dimensions of human intelligence, collective intelligence, and also artificial intelligence within the city.The intelligence of cities "resides in the increasingly effective combination of digital telecommunication networks (the nerves), ubiquitously embedded intelligence (the brains), sensors and tags (the sensory organs), and software (the knowledge and cognitive competence)".
+      <br><br><br><div class="bgsections">Orchestration intelligence: Where cities establish institutions and community-based problem solving and collaborations, such as in Bletchley Park, where the Nazi Enigma cipher was decoded by a team led by Alan Turing. This has been referred to as the first example of a smart city or an intelligent community.</div>
+            <br><br><div class="bgsections">Empowerment intelligence: Cities provide open platforms, experimental facilities and smart city infrastructure in order to cluster innovation in certain districts. These are seen in the Kista Science City in Stockholm and the Cyberport Zone in Hong Kong. Similar facilities have also been established in Melbourne and Kyiv.</div>
+            <br><br><div class="bgsections">Instrumentation intelligence: Where city infrastructure is made smart through real-time data collection, with analysis and </div>
+           <br><br><div class="bgsections">Technology framework:
+            A smart city relies heavily on the deployment of technology. Different combinations of technological infrastructure interact to form the array of smart city technologies with varying levels of interaction between human and technological systems.</div>
+            <br><br><div class="bgsections">Digital: A service oriented infrastructure is required to connect individuals and devices in a smart city. These include innovation services and communication infrastructure. Yovanof, G. S. & Hazapis, G. N. define a digital city as "a connected community that combines broadband communications infrastructure; a flexible, service-oriented computing infrastructure based on open industry standards; and, innovative services to meet the needs of governments and their employees, citizens and businesses."</div>
+            <br><br><div class="bgsections">Ubiquitous: A ubiquitous city provides access to public services through any connected device. U-city is an extension of the digital city concept because of the facility in terms of accessibility to every infrastructure.</div>
+            <br><br><div class="bgsections">Wired: The physical components of IT systems are crucial to early-stage smart city development. Wired infrastructure is required to support the IoT and wireless technologies central to more interconnected living. A wired city environment provides general access to continually updated digital and physical infrastructure. The latest in telecommunications, robotics, IoT, and various connected technologies can then be deployed to support human capital and productivity.</div>
+            <br><br><div class="bgsections">Hybrid: A hybrid city is the combination of a physical conurbation and a virtual city related to the physical space. This relationship can be one of virtual design or the presence of a critical mass of virtual community participants in a physical urban space. Hybrid spaces can serve to actualize future-state projects for smart city services and integration.</div>
+            <br><br><div class="bgsections">Information city: The multiplicity of interactive devices in a smart city generates a large quantity of data. How that information is interpreted and stored is critical to Smart city growth and security</div></p>
+        
+
+        </div>
+<a name="Page3"></a>
+<div class="box3" id="Page3">
+    <header class="w3-container w3-padding-32 w3-center id="home">
+        <h1>Infrastructure</h1>
+      
+        <p>If you love here you would never want to leave or have to leave
+            This city in front of you today includes everything-<br><BR><div class="bgsections">Hospital-
+            including highly sofesticated machine equipments and ai for the life threatening surgeries.All the critical patients hospital beds are equipped with motion sensors which alert are staff whenever they are awake or need anything as soon as they move. The main problem in hospitals these days are accomodation problemsso this building of ours offers an extension facility in which incase of Extreme number of patients.</div><br>
+            <div class="bgsections">Office building-
+                It is a glass building.It adds beauty to a building when used in transparent or translucent applications. Glass transmits up to 80% of available natural daylight. The use of natural light can lower electricity bills, brighten the rooms of a building, and can also boost the mood of the occupants. This building has 3 sections - IT , clothing and service</div><bR>
+                <div class="bgsections">Higway and airport- in case you ever want to leave this beautiful city we have an airport runway. We have a junction point at the airport where u can either use the services of our planes or our subway</div><br>
+                    <div class="bgsections">The street lights work on piezo electricity so everytime someone walks on the road or side walk or drives there after sunset they will be enlightened</div><br>
+                        <div class="bgsections">All the vehicles in this city run on electricity and are automated including personal vehicles but the preferred transport is the subways for long distances and buses for short distances which is all on the government pay roll</div><Br>
+                            <div class="bgsections">We use projections in the sky for advertisement to prevent visual pollution</div><br>
+                                <div class="bgsections">Our residential area includes all provisions from iron clothes to getting food and clothes and everything in the building itself</div><br>   
+                                    <div class="bgsections">Solar panels Are dotted across every building utilising every bit of sunlight falling on it</div><br>
+                                    <div class="bgsections">Lightning absorbers which Absorb the ligning falling and convert it into electricity</div><br>
+                                    <div class="bgsections">And windmills harnessing all the Energy of the air into electricity.</div><br>
+                                        <div class="bgsections">Agriculture<br>
+                                            Animal Manures can directly be used of electricity generation after mixing with sea sand. Exposure to sunlight is essential to produce electricity from animal manure. Electricity generation resulted in high removal percentage of COD, TKN. Animal manure is a cheap source for electricity generation.
+                                            <br>There is a seperation between recyclable and. Non recyclable waste were the non recyclable is tried to use in labs for tests or manure and plastic and rubber and paper will be remade into different things. <br>
+                                            <a href>www.sciencedirect.com</a><br>
+                                        <a href>https://social-innovation.hitachi/en-in/knowledge-hub/viewpoint/green-revolution/</a></div>
+                                        <div class="bgsections"></div>
+                        </p></div>
+<div class="box4"><h1>Let us know!</h1>
+<p><!-- Start BawkBox Code--><script data-sil-id="636a8a094947f300138dd786">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/chatroom/636a8a094947f300138dd786?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-chatroom sil-widget" id="sil-widget-636a8a094947f300138dd786"><a href="//bawkbox.com/install/chatroom">Public Chatroom</a></div><!-- End BawkBox Code--></p>
+</div>
+</div>
+
+
+<!-- END PAGE CONTENT -->
+
+</body>
+</html>
